@@ -1,6 +1,6 @@
 import java.text.NumberFormat;
 
-public class Product
+public abstract class Product
 {
     protected String code;
     private String description;
