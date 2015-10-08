@@ -1,12 +1,17 @@
 public class Software extends Product
 {
-    private String version;
+    private String programmer;
+    private String platform;
+    private String os;
 
     public Software()
     {
         super.setCode(" ");
         super.setDescription(" ");
         super.setPrice(0.00);
+        programmer = " ";
+        platform = " ";
+        os = " ";
         count++;
     }
 
@@ -18,7 +23,11 @@ public class Software extends Product
     @Override
     public String toString()
     {
-        return super.toString() + "Version:     " +
-            version + "\n";
+        return super.toString() + "Version:     " + version + "\n";
+    }
+    
+    public String whatAmI()
+    {
+    	return "I am software";
     }
 }

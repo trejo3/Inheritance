@@ -1,12 +1,15 @@
 public class Book extends Product
 {
     private String author;
+    private int pages;
 
     public Book()
     {
         super.setCode(" ");
         super.setDescription(" ");
         super.setPrice(0.00);
+        author = " ";
+        pages = 
     	count++;
     }
 
@@ -23,7 +26,11 @@ public class Book extends Product
     @Override
     public String toString()
     {
-        return super.toString() + "Author:      " +
-            author + "\n";
+        return super.toString() + "Author:   " + author + "\n";
+    }
+    
+    public String whatAmI()
+    {
+    	return "I am a book";
     }
 }

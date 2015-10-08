@@ -39,12 +39,11 @@ public class Product
     }
     public String getFormattedPrice()
     {
-        NumberFormat currency = 
-            NumberFormat.getCurrencyInstance();
+        NumberFormat currency = NumberFormat.getCurrencyInstance();
         return currency.format(price);
     }
 
-    @Override
+    
     public String toString()
     {
         return "Code:        " + code + "\n" +
@@ -56,5 +55,10 @@ public class Product
     public static int getCount()
     {
         return count;
+    }
+    
+    public String whatAmI()
+    {
+    	return "I am product";
     }
 }
