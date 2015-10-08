@@ -61,4 +61,17 @@ public class Product
     {
     	return "I am product";
     }
+  
+@Override
+    public boolean equals(Object o)
+    {
+    	if (code.equals(code) &&
+    			description.equals(description)&&
+    			price == price)
+    	{
+    		return true;
+    	}
+    	else {return false;}
+    		
+    }
 }

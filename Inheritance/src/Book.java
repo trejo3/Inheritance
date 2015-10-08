@@ -33,4 +33,14 @@ public class Book extends Product
     {
     	return "I am a book";
     }
+   
+    
+ @Override   
+    public boolean equals(Object o)
+    {
+    	if (super.equals(o) == true && author.equals(author) && pages == pages)
+    	{
+    		return true;
+    	}
+    	else {return false;}
 }
